@@ -1,0 +1,142 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="#ffffc3c3"
+    android:focusable="true"
+    android:focusableInTouchMode="true"
+    android:orientation="horizontal" >
+
+    <RelativeLayout
+        android:id="@+id/relativeLayout1"
+        android:layout_width="fill_parent"
+        android:layout_height="50.0dip" >
+
+        <ImageView
+            android:id="@+id/titleBg"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:background="#dd0000" />
+
+        <ImageView
+            android:id="@+id/progressImage"
+            android:layout_width="0.0dip"
+            android:layout_height="fill_parent"
+            android:background="@drawable/title_bg"
+            android:visibility="gone" />
+
+        <Button
+            android:id="@+id/titleRightButton"
+            style="\@style/title_right_button"
+            android:layout_width="100.0dip"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_gravity="center_vertical"
+            android:layout_marginRight="5.0dip"
+            android:layout_marginTop="2.0dip"
+            android:visibility="gone" />
+
+        <TextView
+            android:id="@+id/titleText"
+            android:layout_width="500dp"
+            android:layout_height="match_parent"
+            android:layout_centerVertical="true"
+            android:padding="10.0dip"
+            android:singleLine="true"
+            android:text="注册"
+            android:textSize="15dp" />
+    </RelativeLayout>
+
+    <EditText
+        android:id="@+id/editText2"
+        android:layout_width="250dp"
+        android:layout_height="40dp"
+        android:layout_alignLeft="@+id/editText1"
+        android:layout_alignRight="@+id/editText1"
+        android:layout_below="@+id/editText1"
+        android:layout_marginTop="15dp"
+        android:background="@drawable/input_text"
+        android:ems="10"
+        android:hint="@string/register_password_hint"
+        android:inputType="textPassword" />
+
+    <EditText
+        android:id="@+id/editText3"
+        android:layout_width="250dp"
+        android:layout_height="40dp"
+        android:layout_alignLeft="@+id/editText2"
+        android:layout_alignRight="@+id/editText2"
+        android:layout_below="@+id/editText2"
+        android:layout_marginTop="15dp"
+        android:background="@drawable/input_text"
+        android:ems="10"
+        android:inputType="textPassword"
+        android:hint="@string/register_confirm_password"
+       />
+
+    <EditText
+        android:id="@+id/editText4"
+        android:layout_width="250dp"
+        android:layout_height="40dp"
+        android:layout_alignLeft="@+id/editText3"
+        android:layout_alignRight="@+id/editText3"
+        android:layout_below="@+id/editText3"
+        android:layout_marginTop="15dp"
+        android:background="@drawable/input_text"
+        android:ems="10"
+        android:inputType="number" 
+        android:hint="@string/register_phone_hint" />
+
+    <ImageView
+        android:id="@+id/regist_regist"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/radioGroup"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="15dp"
+        android:adjustViewBounds="true"
+        android:clickable="true"
+        android:src="@drawable/button_register" />
+
+    <EditText
+        android:id="@+id/editText1"
+        android:layout_width="250dp"
+        android:layout_height="40dp"
+        android:layout_below="@+id/relativeLayout1"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="29dp"
+        android:background="@drawable/input_text"
+        android:ems="10"
+        android:hint="@string/register_useraccount_hint" />
+
+    <RadioGroup
+        android:id="@+id/radioGroup"
+        android:orientation="horizontal"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/editText4"
+        android:layout_marginTop="15dp"
+        android:layout_alignLeft="@+id/editText4"
+        android:layout_alignRight="@+id/editText4"
+        android:contentDescription="性别" >
+
+        <RadioButton
+            android:id="@+id/radioBoy"
+            android:checked="true"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/editText4"
+            android:layout_below="@+id/editText4"
+            android:text="男" />
+
+        <RadioButton
+            android:id="@+id/radioGirl"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="50dp"
+            android:text="女" />
+
+    </RadioGroup>
+
+</RelativeLayout>

@@ -1,0 +1,59 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:ptr="http://schemas.android.com/apk/res-auto"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent">
+    
+
+    <ListView
+        android:id="@+id/goods_list"
+        android:layout_width="match_parent"
+        android:layout_height="fill_parent"
+        android:layout_below="@+id/top_relative"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true" >
+    </ListView>
+
+    <RelativeLayout
+        android:id="@+id/top_relative"
+        android:layout_width="fill_parent"
+        android:layout_height="50.0dip"
+        android:layout_alignLeft="@+id/goods_list"
+        android:layout_alignParentTop="true" >
+
+        <ImageView
+            android:id="@+id/titleBg"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:background="#dd0000" />
+
+        <ImageView
+            android:id="@+id/progressImage"
+            android:layout_width="0.0dip"
+            android:layout_height="fill_parent"
+            android:background="@drawable/title_bg"
+            android:visibility="gone" />
+
+        <Button
+            android:id="@+id/titleRightButton"
+            style="\@style/title_right_button"
+            android:layout_width="100.0dip"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_gravity="center_vertical"
+            android:layout_marginRight="5.0dip"
+            android:layout_marginTop="2.0dip"
+            android:visibility="gone" />
+
+        <TextView
+            android:id="@+id/titleText1"
+            android:layout_width="500dp"
+            android:layout_height="match_parent"
+            android:layout_centerVertical="true"
+            android:padding="10.0dip"
+            android:singleLine="true"
+            android:textSize="15dp" />
+    </RelativeLayout>
+
+</RelativeLayout>

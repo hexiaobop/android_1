@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/empty_cart_view"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="#99ffc3c3"
+     >
+
+    <RelativeLayout
+        android:id="@+id/top_relative"
+        android:layout_width="fill_parent"
+        android:layout_height="50.0dip" >
+
+        <ImageView
+            android:id="@+id/titleBg"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:background="#dd0000" />
+
+        <ImageView
+            android:id="@+id/progressImage"
+            android:layout_width="0.0dip"
+            android:layout_height="fill_parent"
+            android:background="@drawable/title_bg"
+            android:visibility="gone" />
+
+        <Button
+            android:id="@+id/titleRightButton"
+            style="\@style/title_right_button"
+            android:layout_width="100.0dip"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_gravity="center_vertical"
+            android:layout_marginRight="5.0dip"
+            android:layout_marginTop="2.0dip"
+            android:visibility="gone" />
+
+        <TextView
+            android:id="@+id/titleText"
+            android:layout_width="500dp"
+            android:layout_height="match_parent"
+            android:layout_centerVertical="true"
+            android:padding="10.0dip"
+            android:singleLine="true"
+            android:text="购物车"
+            android:textSize="15dp" />
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/no_cart_item"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/top_relative"
+        android:layout_marginLeft="15.0dip"
+        android:layout_marginRight="15.0dip"
+        android:layout_marginTop="10.0dip"
+        android:background="#ccffffff"
+        android:padding="15.0dip" >
+
+        <ImageView
+            android:id="@+id/shopping_cat_icon"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true"
+            android:src="@drawable/empty_car_bg" />
+
+    </RelativeLayout>
+
+    <ImageView
+        android:id="@+id/settle_accounts"
+        style="\@style/common_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/no_cart_item"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="12.0dip"
+        android:src = "@drawable/go_see"
+        android:gravity="center"
+        android:text="去逛逛" />
+
+</RelativeLayout>

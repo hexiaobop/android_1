@@ -1,0 +1,135 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/empty_cart_view"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="#ffffc3c3" >
+
+    <RelativeLayout
+        android:id="@+id/top_relative"
+        android:layout_width="fill_parent"
+        android:layout_height="50.0dip" >
+
+        <ImageView
+            android:id="@+id/titleBg"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:background="#dd0000" />
+
+        <ImageView
+            android:id="@+id/progressImage"
+            android:layout_width="0.0dip"
+            android:layout_height="fill_parent"
+            android:background="@drawable/title_bg"
+            android:visibility="gone" />
+
+        <TextView
+            android:id="@+id/titleText"
+            android:layout_width="500dp"
+            android:layout_height="match_parent"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentTop="true"
+            android:padding="10.0dip"
+            android:singleLine="true"
+            android:text="订单提交"
+            android:textSize="15dp" />
+
+    </RelativeLayout>
+
+    <TextView
+        android:id="@+id/textView1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/top_relative"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="15dp"
+        android:text="您本次消费信息如下:" />
+
+    <TextView
+        android:id="@+id/paymoney"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/textView1"
+        android:layout_marginLeft="15dp"
+        android:layout_marginTop="14dp"
+        android:padding="5.0dip"
+        android:text="应付金额：" />
+
+  
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/paymoney"
+        android:layout_below="@+id/paymoney"
+        android:layout_marginTop="19dp"
+        android:text="确认收货地址:" />
+
+    <EditText
+        android:id="@+id/editAddress"
+        android:layout_width="250dp"
+        android:layout_height="40dp"
+        android:layout_below="@+id/textView2"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="10dp"
+        android:background="@drawable/input_text"
+        android:ems="10" >
+
+        <requestFocus />
+    </EditText>
+
+    <TextView
+        android:id="@+id/textView3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/textView2"
+        android:layout_marginTop="60dp"
+        android:layout_alignLeft="@+id/textView2"
+        android:text="收货人联系方式:" />
+
+    <EditText
+        android:id="@+id/editPhone"
+        android:layout_width="250dp"
+        android:layout_height="40dp"
+        android:layout_alignLeft="@+id/editAddress"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@+id/textView3"
+        android:layout_marginTop="10dp"
+        android:background="@drawable/input_text"
+        android:ems="10"
+        android:inputType="number"/>
+
+    <ImageView
+        android:id="@+id/continue_shoping_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/editPhone"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="20dp"
+        android:layout_weight="1.0"
+        android:gravity="center"
+        android:src="@drawable/topay"
+        android:text="确认付款" />
+
+    <TextView
+        android:id="@+id/yuan"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/paymoney"
+        android:layout_alignBottom="@+id/paymoney"
+        android:layout_alignRight="@+id/continue_shoping_text"
+        android:layout_marginRight="22dp"
+        android:text="元" />
+
+      <TextView
+          android:id="@+id/pay"
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:layout_alignBaseline="@+id/yuan"
+          android:layout_alignBottom="@+id/yuan"
+          android:layout_toLeftOf="@+id/yuan"
+          android:text="229.00" />
+
+"
+
+</RelativeLayout>

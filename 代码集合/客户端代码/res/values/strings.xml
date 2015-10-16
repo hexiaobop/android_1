@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">flower</string>
+    <string name="hello_world">Hello world!</string>
+    <string name="action_settings">Settings</string>
+    <string name="home">首页</string>
+    <string name="catagory">分类</string>
+    <string name="buycar">购物车</string>
+    <string name="person">个人</string>
+
+    <!-- 注册 -->
+
+    <string name="register_in_normal">普通用户注册</string>
+    <string name="register_useraccount_hint">请输入用户名</string>
+    <string name="register_password_hint">请输入密码</string>
+    <string name="register_confirm_password">再次输入密码</string>
+    <string name="register_phone_hint">请输入11位手机号码</string>
+
+    <!-- 登陆界面 -->
+    <string name="login">登录</string>
+    <string name="useraccount">账号名：</string>
+    <string name="password">密   码：</string>
+    <string name="inputpassword">请输入密码</string>
+    <string name="inputaccount">请输入账号</string>
+    <string name="register">快速注册</string>
+    <string name="search_info">暂无收索历史</string>
+    <string name="button_login">登   录</string>
+    <string name="find_password">找回密码</string>
+    <string name="usecooperationaccount">用合作网站帐户登录</string>
+    <string name="registerfree">免费注册</string>
+    <string name="login_loading">正在登陆，请稍后。。。</string>
+    
+    
+    <!-- 购物车 -->
+
+    <string name="car_item_hint">购物车还是空的，快去选购吧!</string>
+     <!-- 购物车 -->
+
+    <string name="searchbar_hint">情人节</string>
+    
+
+</resources>

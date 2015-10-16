@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/empty_cart_view"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="#ffffc3c3" >
+
+    <RelativeLayout
+        android:id="@+id/top_relative"
+        android:layout_width="fill_parent"
+        android:layout_height="50.0dip" >
+
+        <ImageView
+            android:id="@+id/titleBg"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:background="#dd0000" />
+
+        <ImageView
+            android:id="@+id/progressImage"
+            android:layout_width="0.0dip"
+            android:layout_height="fill_parent"
+            android:background="@drawable/title_bg"
+            android:visibility="gone" />
+
+        <TextView
+            android:id="@+id/titleText"
+            android:layout_width="500dp"
+            android:layout_height="match_parent"
+            android:layout_centerVertical="true"
+            android:padding="10.0dip"
+            android:singleLine="true"
+            android:text="首页"
+            android:textSize="15dp" />
+    </RelativeLayout>
+
+    <Gallery
+        android:id="@+id/gallery"
+        android:layout_width="500dp"
+        android:layout_height="200dp"
+        android:animationDuration="500"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/top_relative" />
+    
+      <ImageView
+        android:id="@+id/firstpage"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/gallery"
+        android:layout_alignParentBottom="true"
+        android:layout_marginTop="0dp"
+        android:background="#66ffffff"
+        android:layout_toRightOf="@+id/login_login"
+        android:adjustViewBounds="true"
+        android:src="@drawable/firstpage" />
+    
+
+</RelativeLayout>

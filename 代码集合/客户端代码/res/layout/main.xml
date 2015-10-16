@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical"
+     >
+
+   <android.support.v4.view.ViewPager
+        android:id="@+id/viewpager"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:layout_alignParentBottom="true"
+            android:orientation="vertical" 
+           >
+
+            <FrameLayout
+                android:id="@android:id/tabcontent"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1.15" >
+
+            </FrameLayout>
+
+            <TabWidget
+                android:id="@android:id/tabs"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:visibility="gone" >
+            </TabWidget>
+
+            <RadioGroup
+                android:id="@+id/group"
+                android:layout_width="fill_parent"
+                android:layout_height="40dp"
+                android:background="#D1D1D1"
+                android:gravity="center_vertical"
+                android:orientation="horizontal" >
+
+
+                    <RadioButton
+                        android:id="@+id/button_home"
+                        android:layout_width="73dp"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentLeft="true"
+                        android:layout_alignParentTop="true"
+                        android:layout_weight="1.0"
+                        android:button="@null"
+                        android:checked="true"
+                        android:drawableTop="@drawable/eg"
+                        android:background="@drawable/button_home"
+                        android:gravity="center_horizontal"
+                       
+                       />
+
+                    
+
+                    <RadioButton
+                        android:id="@+id/button_category"
+                        android:layout_width="73dp"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentTop="true"
+                        android:layout_centerHorizontal="true"
+                        android:layout_weight="1.0"
+                        android:background="@drawable/button_category"
+                        android:button="@null"
+                        android:drawableTop="@drawable/eg"
+                        android:gravity="center_horizontal"
+                        />
+                     <RadioButton
+                        android:id="@+id/button_buycar"
+                        android:layout_width="73dp"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentRight="true"
+                        android:layout_alignParentTop="true"
+                        android:layout_weight="1.0"
+                        android:background="@drawable/button_buycar"
+                        android:button="@null"
+                        android:drawableTop="@drawable/eg"
+                        android:gravity="center_horizontal"
+                        />
+
+                        <RadioButton
+                        android:id="@+id/button_person"
+                        android:layout_width="73dp"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentRight="true"
+                        android:layout_alignParentTop="true"
+                        android:layout_weight="1.0"
+                        android:background="@drawable/button_person"
+                        android:button="@null"
+                        android:drawableTop="@drawable/eg"
+                        android:gravity="center_horizontal"
+                        />
+
+            </RadioGroup>
+
+        </LinearLayout>
+    
+
+    
+
+</RelativeLayout>
